@@ -8,20 +8,20 @@ pre : " <b> 2.2 </b> "
 ### Get code to deploy model
 * Access huggingface, we will get the trained model to use.
 * [Link model](https://huggingface.co/hungtu/vinfast-car-classifier/tree/main)
-![sg](/ws1/images/2.prerequisite/2.0.png)
+![sg](/workshop-aws-card-clash-4/images/2.prerequisite/2.0.png)
 * Go to **Deploy**, select **Amazon Sagemaker**.
 * Copy the code to use in the notebook.
-![sg](/ws1/images/2.prerequisite/2.2_.png)
+![sg](/workshop-aws-card-clash-4/images/2.prerequisite/2.2_.png)
 ### Run notebook and create endpoint
 * Go to Amazon SageMaker, select **Notebooks**:
 * Select **Create notebook instance**:
-![sg](/ws1/images/2.prerequisite/2.3_.png)
+![sg](/workshop-aws-card-clash-4/images/2.prerequisite/2.3_.png)
 * **Notebook instance name**: ```vinfast-prediction```.
 * Leave the default settings as shown.
 * Select **Create notebook instance**
-![sg](/ws1/images/2.prerequisite/2.4_.png)
+![sg](/workshop-aws-card-clash-4/images/2.prerequisite/2.4_.png)
 * Wait a few minutes for the notebook to be created, when the Status is InService, it is ok.
-![sg](/ws1/images/2.prerequisite/2.7_.png)
+![sg](/workshop-aws-card-clash-4/images/2.prerequisite/2.7_.png)
 * After the instance is created, Select **Open JupyterLab**.
 * Select File -> New -> Notebook.
 * Select **kernel: conda_tensorflow2_p310**.
@@ -72,7 +72,7 @@ data = f.read()
 predictor.predict(data)
 ```
 * In the code above, I tried to get an image of the car I uploaded to the S3 bucket to test the model. You can upload an image to the S3 bucket and test if the model is ok.
-![sg](/ws1/images/2.prerequisite/2.8_.png)
+![sg](/workshop-aws-card-clash-4/images/2.prerequisite/2.8_.png)
 * Go to **Inference**, select **endpoint**:
 * We can see the endpoint just created via the notebook.
-![sg](/ws1/images/2.prerequisite/2.9_.png)
+![sg](/workshop-aws-card-clash-4/images/2.prerequisite/2.9_.png)

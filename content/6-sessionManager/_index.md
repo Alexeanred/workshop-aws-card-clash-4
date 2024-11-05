@@ -22,18 +22,18 @@ pre : " <b> 6. </b> "
 * Select **AWS services**.
 * Search: **Service Name = com.amazonaws.us-east-1.ssm**.
 * Select **VPC default**.
-![sg](/ws1/images/5.fwd/5.6.png)
+![sg](/workshop-aws-card-clash-4/images/5.fwd/5.6.png)
 * Select subnets: **us-east-1d**, subnet of ec2 instance.
 * Select sg: **vpc endpoint sg** just created.
 * Select **Full access** for Policy.
 * Select **Create endpoint**.
 * Interface endpoint will take longer to create than Gateway endpoint.
-![sg](/ws1/images/5.fwd/5.7.png)
+![sg](/workshop-aws-card-clash-4/images/5.fwd/5.7.png)
 * After creating 3 VPC endpoints for System manager, go to System manager:
 * Select **Session Manager**:
 * Select **Start a session**.
 * Select the ec2 instance you want to connect to.
-![sg](/ws1/images/5.fwd/5.14.png)
+![sg](/workshop-aws-card-clash-4/images/5.fwd/5.14.png)
 * When successfully logged in, we run the commands to test the vpc endpoint of s3 and cloudwatch.
 * First, we need to log in with the user ec2-user.
 * Next, we try to list the bucket in the S3 bucket to see if it works, if it works, we succeed.
@@ -44,6 +44,6 @@ aws s3 ls s3://vinfast-car-images-150903
 echo "Manual log test $(date)" >> /home/ec2-user/test2.log
 ```
 * The objects in the vinfast-images bucket have been listed.
-![sg](/ws1/images/5.fwd/5.8.png)
+![sg](/workshop-aws-card-clash-4/images/5.fwd/5.8.png)
 * There is a new event log written to it, the log we just wrote.
-![sg](/ws1/images/5.fwd/5.10.png)
+![sg](/workshop-aws-card-clash-4/images/5.fwd/5.10.png)

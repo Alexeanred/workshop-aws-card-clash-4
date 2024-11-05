@@ -7,10 +7,10 @@ pre : " <b> 4. </b> "
 ---
 ### Tạo log groups
 * Vào cloudwatch, chọn mục **Log groups**.
-![sg](/ws1/images/4.s3/4.1_.png) 
+![sg](/workshop-aws-card-clash-4/images/4.s3/4.1_.png) 
 * Ở log group name: ```streamlit-app-log-group```
 * Chọn nút **Create**
-![sg](/ws1/images/4.s3/4.2_.png) 
+![sg](/workshop-aws-card-clash-4/images/4.s3/4.2_.png) 
 
 ### Cài đặt cloudwatch agent trên web server ec2 instance
 * Ở web server instance, chạy các lệnh sau:
@@ -67,4 +67,4 @@ Do you want to store the config in the SSM parameter store? -> no
 ```
 * Sau khi cấu hình xong, ta chạy thêm các lệnh để hoàn thành việc cấu hình cloudwatch agent.
 * Khi cấu hình thành công, ta sẽ thấy được log đã được đẩy vào log group.
-![sg](/ws1/images/4.s3/4.3_.png) 
+![sg](/workshop-aws-card-clash-4/images/4.s3/4.3_.png) 

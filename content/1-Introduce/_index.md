@@ -5,7 +5,7 @@ weight : 1
 chapter : false
 pre : " <b> 1. </b> "
 ---
-![arch](/ws1/images/kientruc.png)
+![arch](/workshop-aws-card-clash-4/images/kientruc.png)
 
 ## Architectural idea:
 * **Users will classify images of Vinfast car models through the following architecture:**

@@ -21,18 +21,18 @@ pre : " <b> 6. </b> "
 * Chọn **AWS services**.
 * Search: **Service Name = com.amazonaws.us-east-1.ssm**.
 * Chọn **VPC default**.
-![sg](/ws1/images/5.fwd/5.6.png) 
+![sg](/workshop-aws-card-clash-4/images/5.fwd/5.6.png) 
 * Chọn subnets: **us-east-1d**, subnet của ec2 instance.
 * Chọn sg: **vpc endpoint sg** vừa tạo.
 * Chọn **Full access** cho Policy.
 * Chọn **Create endpoint**.
 * Interface endpoint khi tạo sẽ lâu hơn Gateway endpoint.
-![sg](/ws1/images/5.fwd/5.7.png) 
+![sg](/workshop-aws-card-clash-4/images/5.fwd/5.7.png) 
 * Sau khi tạo xong 3 VPC endpoints cho System manager, ta vào System manager:
 * Chọn mục **Session Manager**:
 * Chọn **Start a session**.
 * Chọn ec2 instance mà muốn connect vào. 
-![sg](/ws1/images/5.fwd/5.14.png) 
+![sg](/workshop-aws-card-clash-4/images/5.fwd/5.14.png) 
 * Khi vào thành công, ta chạy các câu lệnh để test vpc endpoint của s3 và cloudwatch.
 * Đầu tiên, ta cần vào với user là ec2-user.
 * Tiếp theo ta thử list bucket ở S3 bucket thử xem được không, nếu được thì ta thành công.
@@ -43,8 +43,8 @@ aws s3 ls s3://vinfast-car-images-150903
 echo "Manual log test $(date)" >> /home/ec2-user/test2.log
 ```
 * Đã list ra được các object ở bucket vinfast-images.
-![sg](/ws1/images/5.fwd/5.8.png) 
+![sg](/workshop-aws-card-clash-4/images/5.fwd/5.8.png) 
 * Đã có event log mới ghi vào đó là log ta vừa ghi.
-![sg](/ws1/images/5.fwd/5.10.png) 
+![sg](/workshop-aws-card-clash-4/images/5.fwd/5.10.png) 
 
 

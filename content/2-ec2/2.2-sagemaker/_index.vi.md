@@ -8,20 +8,20 @@ pre : " <b> 2.2 </b> "
 ### Lấy code để deploy model
 * Truy cập vào huggingface, ta sẽ lấy model đã train rồi để dùng.
 * [Link model](https://huggingface.co/hungtu/vinfast-car-classifier/tree/main)
-![sg](/ws1/images/2.prerequisite/2.0.png) 
+![sg](/workshop-aws-card-clash-4/images/2.prerequisite/2.0.png) 
 * Vào mục **Deploy**, chọn **Amazon Sagemaker**.
 * Copy code để lại để dùng trong notebook.
-![sg](/ws1/images/2.prerequisite/2.2_.png) 
+![sg](/workshop-aws-card-clash-4/images/2.prerequisite/2.2_.png) 
 ### Chạy notebook và tạo endpoint
 * Vào Amazon SageMaker, chọn **Notebooks**:
 * Chọn **Create notebook instance**:
-![sg](/ws1/images/2.prerequisite/2.3_.png) 
+![sg](/workshop-aws-card-clash-4/images/2.prerequisite/2.3_.png) 
 * **Notebook instance name**: ```vinfast-prediction```.
 * Để các setting default như hình.
 * Chọn **Create notebook instance**
-![sg](/ws1/images/2.prerequisite/2.4_.png) 
+![sg](/workshop-aws-card-clash-4/images/2.prerequisite/2.4_.png) 
 * Đợi vài phút để notebook dc tạo, khi nào Status là InService là ok.
-![sg](/ws1/images/2.prerequisite/2.7_.png) 
+![sg](/workshop-aws-card-clash-4/images/2.prerequisite/2.7_.png) 
 * Sau khi instance được tạo xong, Chọn **Open JupyterLab**.
 * Chọn File -> New -> Notebook.
 * Chọn **kernel: conda_tensorflow2_p310**.
@@ -72,7 +72,7 @@ with open("vinfast.jpg", "rb") as f:
 predictor.predict(data)
 ```
 * Trong code ở trên, mình đã thử lấy 1 hình ảnh xe mình đã upload lên S3 bucket để test thử model. Bạn có thể upload 1 hình ảnh lên S3 bucket và test xem model ok không nhé.
-![sg](/ws1/images/2.prerequisite/2.8_.png) 
+![sg](/workshop-aws-card-clash-4/images/2.prerequisite/2.8_.png) 
 * Vào phần **Inference**, chọn **endpoint**:
 * Ta thấy được endpoint vừa dc tạo qua notebook.
-![sg](/ws1/images/2.prerequisite/2.9_.png) 
+![sg](/workshop-aws-card-clash-4/images/2.prerequisite/2.9_.png) 

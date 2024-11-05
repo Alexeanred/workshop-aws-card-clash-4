@@ -9,11 +9,11 @@ pre : " <b> 2.3 </b> "
 * To enable ec2 instance to communicate with other services, we need to create an IAM role for this ec2 instance.
 * Go to IAM, select **Roles**.
 * Select the **Create role** button.
-![ec23](/ws1/images/2.prerequisite/2.13.png)
+![ec23](/workshop-aws-card-clash-4/images/2.prerequisite/2.13.png)
 * Select AWS service.
 * Select Service: EC2.
 * Select **Next**.
-![ec23](/ws1/images/2.prerequisite/2.14.png)
+![ec23](/workshop-aws-card-clash-4/images/2.prerequisite/2.14.png)
 * Add these policies:
 * ```AmazonS3FullAccess```
 * ```AmazonSageMakerFullAccess```
@@ -21,4 +21,4 @@ pre : " <b> 2.3 </b> "
 * ```CloudWatchAgentServerPolicy```
 * Name the role: ```ssm-ec2-role```, you can name it whatever you want.
 * Select **Create role**.
-![ec23](/ws1/images/2.prerequisite/2.15.png)
+![ec23](/workshop-aws-card-clash-4/images/2.prerequisite/2.15.png)

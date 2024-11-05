@@ -5,7 +5,7 @@ weight : 1
 chapter : false
 pre : " <b> 1. </b> "
 ---
-![arch](/ws1/images/kientruc.png) 
+![arch](/workshop-aws-card-clash-4/images/kientruc.png) 
 
 ## Ý tưởng kiến trúc: 
 * **User sẽ phân loại ảnh các dòng xe hơi vinfast thông qua kiến trúc sau:**

@@ -13,7 +13,7 @@ chapter : false
 * This is an architecture to build a website that can backup, backup the components in it.
 
 * The amulet says: "Life does not lack talented people, only lacks people who persevere to the end". So please be patient and complete this exercise =))
-![arch](/ws1/images/kientruc.png)
+![arch](/workshop-aws-card-clash-4/images/kientruc.png)
 ### Contents
 
 1. [Introduction](1-Introduce/)

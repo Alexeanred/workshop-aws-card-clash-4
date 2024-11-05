@@ -14,7 +14,7 @@ chapter : false
 
 
 *  Tấm bùa đã ghi: "Cuộc sống không thiếu người giỏi, chỉ thiếu những người kiên trì đến cùng". Vì thế hãy kiên trì làm hết bài thực hành này nhé =))
-![arch](/ws1/images/kientruc.png) 
+![arch](/workshop-aws-card-clash-4/images/kientruc.png) 
 ### Nội dung
 
  1. [Giới thiệu](1-Introduce/)
