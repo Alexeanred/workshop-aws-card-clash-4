@@ -32,5 +32,17 @@ pre : " <b> 8. </b> "
 
 * However, because the AWSBackupServiceRolePolicyForBackup policy does not have a policy to access the S3 bucket, we have to create 2 new policies to backup and Restore S3.
 
-![sg](/workshop-aws-card-clash-4/images/8.backup/8.2.png) ![sg](/workshop-aws-card-clash-4/images/8.backup/8.11.png) ### Assign resource: #### EFS ![sg](/workshop-aws-card-clash-4/images/8.backup/8.7.png) #### EBS ![sg](/workshop-aws-card-clash-4/images/8.backup/8. 6.png) ![sg](/workshop-aws-card-clash-4/images/8.backup/8.5.png) #### S3 ![sg](/workshop-aws-card-clash-4/images/8.backup/8.8.png) #### EC2 isntance ![sg](/workshop-aws-card-clash-4/images/8.backup/8.4.png) * We have successfully created backed up plan.
-![sg](/workshop-aws-card-clash-4/images/8.backup/8.3.png) ![sg](/workshop-aws-card-clash-4/images/8.backup/8.12.png)
+![sg](/workshop-aws-card-clash-4/images/8.backup/8.2.png) ![sg](/workshop-aws-card-clash-4/images/8.backup/8.11.png) 
+### Assign resource: 
+#### EFS 
+![sg](/workshop-aws-card-clash-4/images/8.backup/8.7.png) 
+#### EBS 
+![sg](/workshop-aws-card-clash-4/images/8.backup/8.6.png) 
+![sg](/workshop-aws-card-clash-4/images/8.backup/8.5.png) 
+#### S3 
+![sg](/workshop-aws-card-clash-4/images/8.backup/8.8.png) 
+#### EC2 isntance 
+![sg](/workshop-aws-card-clash-4/images/8.backup/8.4.png) 
+* We have successfully created backed up plan.
+![sg](/workshop-aws-card-clash-4/images/8.backup/8.3.png) 
+![sg](/workshop-aws-card-clash-4/images/8.backup/8.12.png)

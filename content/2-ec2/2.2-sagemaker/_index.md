@@ -1,6 +1,6 @@
 ---
-title : "Create sagemaker endpoint"
-date : "`r Sys.Date()`"
+title : "Tạo sagemaker endpoint"
+date :  "`r Sys.Date()`" 
 weight : 2
 chapter : false
 pre : " <b> 2.2 </b> "

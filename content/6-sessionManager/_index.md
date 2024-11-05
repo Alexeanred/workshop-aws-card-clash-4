@@ -11,10 +11,10 @@ pre : " <b> 6. </b> "
 - Another way is to use Bastion host but we are using VPC endpoint so continue to configure =))
 
 - To be able to use Session manager in System managers to access private ec2 instance, we need to configure the following 3 vpc endpoints:
-* **ssm endpoint**
-* **ssmmessages endpoint**
-* **ec2messages endpoint**
-* We will configure 1, the remaining 2 do the same but the service name is different:
+    * **ssm endpoint**
+    * **ssmmessages endpoint**
+    * **ec2messages endpoint**
+* We will configure one, the remaining 2 do the same but the service name is different:
 * Select **Endpoints**:
 * Select **create endpoint**.
 * Name tag: **ssm-endpoint**.
