@@ -34,6 +34,12 @@ pre : " <b> 6. </b> "
 * Select **Start a session**.
 * Select the ec2 instance you want to connect to.
 ![sg](/workshop-aws-card-clash-4/images/5.fwd/5.14.png)
+* After accessing the terminal of ec2 instances, we need to remove the internet gateway route from the route table to see if we can communicate with the services via the vpc endpoint.
+* Go to **Route table**, select the route table associated with the subnet containing the ec2 instance.
+* Select **Edit routes**.
+![sg](/workshop-aws-card-clash-4/images/5.fwd/5.15.png) 
+* We see there is an **internet Gateway** route and we select **remove** and **Save changes**.
+![sg](/workshop-aws-card-clash-4/images/5.fwd/5.16.png)
 * When successfully logged in, we run the commands to test the vpc endpoint of s3 and cloudwatch.
 * First, we need to log in with the user ec2-user.
 * Next, we try to list the bucket in the S3 bucket to see if it works, if it works, we succeed.

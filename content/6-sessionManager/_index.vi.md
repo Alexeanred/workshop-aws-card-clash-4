@@ -33,6 +33,12 @@ pre : " <b> 6. </b> "
 * Chọn **Start a session**.
 * Chọn ec2 instance mà muốn connect vào. 
 ![sg](/workshop-aws-card-clash-4/images/5.fwd/5.14.png) 
+* Sau khi vào được terminal của ec2 instances, ta cần bỏ route internet gateway ở route table để thử xem có giao tiếp với các dịch vụ qua vpc endpoint được không.
+* Vào **Route table**, chọn route table liên kết với subnet chứa ec2 instance.
+* Chọn **Edit routes**.
+![sg](/workshop-aws-card-clash-4/images/5.fwd/5.15.png) 
+* Ta thấy có route **nternet Gateway** và ta chọn **remove** và **Save changes**.
+![sg](/workshop-aws-card-clash-4/images/5.fwd/5.16.png) 
 * Khi vào thành công, ta chạy các câu lệnh để test vpc endpoint của s3 và cloudwatch.
 * Đầu tiên, ta cần vào với user là ec2-user.
 * Tiếp theo ta thử list bucket ở S3 bucket thử xem được không, nếu được thì ta thành công.
