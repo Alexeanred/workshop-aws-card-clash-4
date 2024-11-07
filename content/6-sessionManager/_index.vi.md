@@ -37,7 +37,7 @@ pre : " <b> 6. </b> "
 * Vào **Route table**, chọn route table liên kết với subnet chứa ec2 instance.
 * Chọn **Edit routes**.
 ![sg](/workshop-aws-card-clash-4/images/5.fwd/5.15.png) 
-* Ta thấy có route **nternet Gateway** và ta chọn **remove** và **Save changes**.
+* Ta thấy có route **Internet Gateway** và ta chọn **remove** và **Save changes**.
 ![sg](/workshop-aws-card-clash-4/images/5.fwd/5.16.png) 
 * Khi vào thành công, ta chạy các câu lệnh để test vpc endpoint của s3 và cloudwatch.
 * Đầu tiên, ta cần vào với user là ec2-user.
